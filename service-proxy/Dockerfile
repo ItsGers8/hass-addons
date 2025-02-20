@@ -3,8 +3,12 @@ FROM alpine:3.18
 # Install NGINX
 RUN apk add --no-cache nginx
 
-# Copy NGINX configuration
+# Copy startup script and configuration
+COPY run.sh /run.sh
 COPY nginx.conf /etc/nginx/nginx.conf
 
-# Expose NGINX to Ingress
-CMD ["nginx", "-g", "daemon off;"]
+# Ensure startup script is executable
+RUN chmod +x /run.sh
+
+# Set the entrypoint
+CMD ["/run.sh"]
