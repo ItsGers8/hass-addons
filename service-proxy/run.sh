@@ -1,5 +1,5 @@
 #!/bin/sh
-echo "----------------------------"
+echo "---------------------------------"
 echo "Starting NGINX Proxy for Local Service..."
 
 # Test the NGINX config again
