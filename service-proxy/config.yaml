@@ -1,5 +1,5 @@
 name: "My Service Proxy"
-version: "1.2.5"
+version: "1.2.6"
 slug: "my_service_proxy"
 url: "https://github.com/ItsGers8/hass-addons/service-proxy"
 description: "Proxy for my local service running on localhost:9443"
@@ -13,6 +13,6 @@ arch:
   - aarch64
   - amd64
   - i386
-ports: {}
+ports: 8080
 map:
   - config:rw
