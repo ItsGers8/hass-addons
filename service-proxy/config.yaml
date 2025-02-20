@@ -1,6 +1,7 @@
 name: "My Service Proxy"
 version: "1.0"
 slug: "my_service_proxy"
+url: "https://github.com/ItsGers8/hass-addons/service-proxy"
 description: "Proxy for my local service running on localhost:9443"
 startup: "application"
 ingress: true
