@@ -1,0 +1,17 @@
+name: "My Service Proxy"
+version: "1.0"
+slug: "my_service_proxy"
+description: "Proxy for my local service running on localhost:9443"
+startup: "application"
+ingress: true
+ingress_port: 9443
+panel_icon: "mdi:server"
+arch:
+  - armv7
+  - armhf
+  - aarch64
+  - amd64
+  - i386
+ports: {}
+map:
+  - config:rw
