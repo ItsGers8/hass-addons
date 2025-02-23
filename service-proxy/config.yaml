@@ -1,8 +1,9 @@
 name: "My Service Proxy"
-version: "1.2.9"
+version: "1.3.0"
 url: "https://github.com/ItsGers8/hass-addons/tree/main/service-proxy"
 ingress: true
 panel_icon: "mdi:server"
+init: false
 slug: "nginx-ingress-example"
 description: "Ingress testing"
 arch:
