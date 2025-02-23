@@ -1,14 +1,15 @@
-FROM alpine:3.18
+ARG BUILD_FROM
+FROM $BUILD_FROM
 
-# Install NGINX
-RUN apk add --no-cache nginx
+#Add nginx and create the run folder for nginx.
+RUN \
+  apk --no-cache add \
+    nginx \
+  \
+  && mkdir -p /run/nginx
 
-# Copy startup script and configuration
-COPY run.sh /run.sh
-COPY nginx.conf /etc/nginx/nginx.conf
+#Copy our conf into the nginx http.d folder.
+COPY ingress.conf /etc/nginx/http.d/
 
-# Ensure startup script is executable
-RUN chmod +x /run.sh
-
-# Set the entrypoint
-CMD ["/run.sh"]
+#Launch nginx with debug options.
+CMD [ "nginx","-g","daemon off;error_log /dev/stdout debug;" ]
