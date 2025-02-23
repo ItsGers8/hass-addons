@@ -1,19 +1,13 @@
 name: "My Service Proxy"
-version: "1.2.7"
-slug: "my_service_proxy"
+version: "1.2.8"
 url: "https://github.com/ItsGers8/hass-addons/tree/main/service-proxy"
-description: "Proxy for my local service running on localhost:9443"
-startup: "application"
 ingress: true
-ingress_port: 9443
 panel_icon: "mdi:server"
+slug: "nginx-ingress-example"
+description: "Ingress testing"
 arch:
-  - armv7
-  - armhf
-  - aarch64
   - amd64
+  - armhf
+  - armv7
   - i386
-ports:
-  8080/tcp: 8080
-map:
-  - config:rw
+ingress: true
