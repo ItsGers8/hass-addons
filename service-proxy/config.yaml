@@ -1,5 +1,5 @@
 name: "Portainer"
-version: "1.3.4"
+version: "1.3.5"
 url: "https://github.com/ItsGers8/hass-addons/tree/main/service-proxy"
 ingress: true
 panel_icon: "mdi:docker"
