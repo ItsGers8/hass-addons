@@ -1,0 +1,14 @@
+name: "NAS"
+version: "1.0"
+url: "https://github.com/ItsGers8/hass-addons/tree/main/nas"
+ingress: true
+panel_icon: "mdi:nas"
+init: false
+slug: "nas"
+description: "Access local NAS through Ingress"
+arch:
+  - amd64
+  - armhf
+  - armv7
+  - i386
+ingress: true
