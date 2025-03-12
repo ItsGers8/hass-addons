@@ -1,0 +1,14 @@
+name: "Plex and play"
+version: "0.0.1"
+url: "https://github.com/ItsGers8/hass-addons/tree/main/plex"
+ingress: true
+panel_icon: "mdi:plex"
+init: false
+slug: "plex"
+description: "Open local plex media server"
+arch:
+  - amd64
+  - armhf
+  - armv7
+  - i386
+ingress: true
