@@ -1,0 +1,14 @@
+name: "Immich"
+version: "0.0.1"
+url: "https://github.com/ItsGers8/hass-addons/tree/main/immich"
+ingress: true
+panel_icon: "mdi:camera-image"
+init: false
+slug: "immich"
+description: "Ingress for immich"
+arch:
+  - amd64
+  - armhf
+  - armv7
+  - i386
+ingress: true
